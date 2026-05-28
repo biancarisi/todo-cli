@@ -56,6 +56,8 @@ const ordenarPorPrioridade = () => {
 ordenarPorPrioridade().forEach(t => 
   console.log(`${t.titulo}`)
 );
+console.log("--- TAREFAS DE BAIXA PRIORIDADE ---");
+console.table(praDepois);
 
 function altaPrioridadeMaiusculo() {
   return tarefas.filter(t => t.prioridade === "alta" && !t.concluida)
