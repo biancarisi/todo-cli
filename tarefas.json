@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titulo": "Estudar JavaScript",
+    "prioridade": "alta",
+    "concluida": false
+  },
+  {
+    "id": 2,
+    "titulo": "Fazer exercícios",
+    "prioridade": "alta",
+    "concluida": false
+  },
+  {
+    "id": 3,
+    "titulo": "Tomar café",
+    "prioridade": "baixa",
+    "concluida": true
+  },
+  {
+    "id": 4,
+    "titulo": "Ler documentação",
+    "prioridade": "media",
+    "concluida": false
+  },
+  {
+    "id": 5,
+    "titulo": "Fazer almoço",
+    "prioridade": "baixa",
+    "concluida": true
+  }
+]

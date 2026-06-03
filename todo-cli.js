@@ -1,4 +1,7 @@
 // todo-cli.js
+
+const fs = require('fs');
+
 let tarefas = [];
 let nextId  = 1;
 
@@ -76,3 +79,9 @@ altaPrioridadeMaiusculo().forEach(titulo => {
 const { total, concluidas, pendentes, pct } = stats();
 console.log(`
 ── STATS: ${concluidas}/${total} concluídas (${pct}%) ──`);
+
+function exportarJSON() {
+  fs.writeFileSync('tarefas.json', JSON.stringify(tarefas, null, 2));
+  console.log(`${tarefas.length} tarefas exportadas.`);
+}
+exportarJSON();
